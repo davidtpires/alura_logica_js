@@ -9,6 +9,11 @@ function sortear(){
         return;
     }
 
+    if(quantidade > (ate - de + 1)){
+        alert('Quantidade ultrapassa a quantidade de numeros disponiveis no intervalo. Verifique!');
+        return;
+    }
+
     let sorteados = [];
     let numero;
 
