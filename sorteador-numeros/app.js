@@ -3,6 +3,7 @@ function sortear(){
     let de = parseInt(document.getElementById('de').value);
     let ate = parseInt(document.getElementById('ate').value);
     let resultado = document.getElementById('resultado');
+    let valorTotal = document.getElementById('valor-total');
 
     if(de >= ate) {
         alert('Campo "Do número" deve ser inferior ao campo "Até o número". Verifique!');
