@@ -21,18 +21,19 @@ function comprar() {
 
     //efetua a compra de ingresso
     if (tipoCompra == 'inferior') {
-        verificaQtdIngressos(qtdInferior, quantidade);
+        comprarIngressos(qtdInferior, quantidade);
     } else if (tipoCompra == 'superior') {
-        verificaQtdIngressos(qtdSuperior, quantidade);
+        comprarIngressos(qtdSuperior, quantidade);
     } else {
-        verificaQtdIngressos(qtdPista, quantidade);
+        comprarIngressos(qtdPista, quantidade);
     }
 
 }
 
-function verificaQtdIngressos(qtdTipo, quantidade){
+function comprarIngressos(qtdTipo, quantidade){
     if ((qtdTipo.textContent - quantidade) >= 0){
         qtdTipo.textContent = (qtdTipo.textContent - quantidade);
+        alert('Compra realizada com sucesso!')
     } else {
         alert('Quantidade de ingresso insuficiente!')
     }
